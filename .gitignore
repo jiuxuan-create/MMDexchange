@@ -1,0 +1,25 @@
+# ---- 不随仓库分发的内容（版权与隐私原因，本地保留）----
+# 第三方模型的转换产物：模型版权归原作者，转成 PMX 再上传属于二次配布
+output/VRM1_Constraint_Twist_Sample/
+# 整屏截图：含桌面图标与聊天窗口
+output/*.png
+# 参考模型的解剖报告：第三方模型内部数据，用 tools/inspect_pmx.py 对自己的模型生成
+tools/ref_report.txt
+tools/vrm_report.txt
+# 本仓库自己的发布包
+MMDexchange.rar
+# 注意：samples/测试模型.vrm 是本项目自建的合成测试模型，要随仓库分发，不要忽略它
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# ---- 测试产生的临时目录 ----
+gui_test_out/
+cli_test/
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+*.swp

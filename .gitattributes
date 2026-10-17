@@ -1,0 +1,16 @@
+# 统一换行符，避免 Windows 上克隆后 .bat / .py 因为 CRLF 出问题
+* text=auto
+
+# Windows 批处理：检出时必须带 CRLF，否则 cmd.exe 解析可能出错
+*.bat text eol=crlf
+
+# 源码与文档：统一 LF
+*.py  text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+
+# 二进制资源不要做任何转换
+*.png binary
+*.vrm binary
+*.pmx binary
+*.rar binary
